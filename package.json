@@ -1,5 +1,5 @@
 {
-  "name": "udemy-vue-js-2-router",
+  "name": "udemy-vue-js-2-router-04-27",
   "version": "1.0.0",
   "description": "Section 4, Lecture 27",
   "main": "src/main.js",
@@ -7,6 +7,9 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js"
   },
   "dependencies": {
