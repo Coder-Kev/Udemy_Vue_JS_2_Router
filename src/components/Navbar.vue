@@ -36,13 +36,13 @@ export default {
       this.$router.push({ name: "Home" });
     },
     goBack() {
-      console.log("On codesandbox.io goBack changes URL but does not render");
+      // On codesandbox.io goBack changes URL but does not render
+      // After adding mode: "history" in router/index.js it worked
       this.$router.go(-1);
     },
     goForward() {
-      console.log(
-        "On codesandbox.io goForward changes URL but does not render"
-      );
+      // On codesandbox.io goForward changes URL but does not render
+      // After adding mode: "history" in router/index.js it worked
       this.$router.go(1);
     }
   }
